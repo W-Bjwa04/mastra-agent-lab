@@ -1,0 +1,36 @@
+{
+  "name": "project_mastra",
+  "version": "1.0.0",
+  "description": "#\u0000 \u0000m\u0000a\u0000s\u0000t\u0000r\u0000a\u0000-\u0000a\u0000g\u0000e\u0000n\u0000t\u0000-\u0000l\u0000a\u0000b\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "mastra build",
+    "start": "mastra start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/W-Bjwa04/mastra-agent-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/W-Bjwa04/mastra-agent-lab/issues"
+  },
+  "homepage": "https://github.com/W-Bjwa04/mastra-agent-lab#readme",
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "mastra": "^1.27.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.63.2",
+    "@mastra/duckdb": "^1.6.4",
+    "@mastra/libsql": "^1.22.3",
+    "@mastra/memory": "^1.28.2",
+    "@mastra/observability": "^1.17.5",
+    "zod": "^4.5.4"
+  }
+}
