@@ -144,8 +144,8 @@ OBSERVABILITY_SERVICE_NAME=personal-assistant-demo
 node .mastra/output/index.mjs
 ```
 
-The server starts on **port 3000** (default Mastra port).
-Open your browser at `http://localhost:3000` or interact via the Mastra CLI:
+The server starts on **port 4111** (default Mastra port).
+Open your browser at `http://localhost:4111` or interact via the Mastra CLI:
 
 ```bash
 mastra dev   # starts a hot‑reload dev server (if you prefer dev mode)
@@ -214,7 +214,7 @@ RUN npm ci && npm run build
 FROM node:20-alpine AS runner
 WORKDIR /app
 COPY --from=builder /app/.mastra/output ./
-EXPOSE 3000
+EXPOSE 4111
 CMD ["node", "index.mjs"]
 ```
 
@@ -222,7 +222,7 @@ Build & run:
 
 ```bash
 docker build -t mastra-demo .
-docker run -p 3000:3000 mastra-demo
+docker run -p 4111:4111 mastra-demo
 ```
 
 ---
